@@ -528,6 +528,7 @@
 
 .image-4 {
   max-height: 150px;
+  display: block;
 }
 
 .mobile-menu-button, .mobile-menu {
