@@ -1,3 +1,35 @@
+@font-face {
+  font-family: Frontage;
+  src: url('../fonts/Frontage-Regular.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Frontage;
+  src: url('../fonts/Frontage-Bold.otf') format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Frontage 3 D";
+  src: url('../fonts/Frontage-3D.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Bright Gesture Demo;
+  src: url('../fonts/Bright-Gesture-DEMO.otf') format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --brown: #553d2d;
   --yellow: #fef2c8;
@@ -38,6 +70,8 @@
 }
 
 .footer-wrapper {
+  grid-column-gap: 65px;
+  grid-row-gap: 65px;
   background-color: var(--brown);
   color: #fff;
   background-image: url('../images/paint-fade.webp');
@@ -47,7 +81,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 75vh;
+  height: 65vh;
   display: flex;
   position: relative;
 }
@@ -1144,7 +1178,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: Frontage, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   position: absolute;
   inset: auto 0% 0%;
@@ -1153,6 +1187,10 @@
 .link-22 {
   color: var(--yellow);
   text-decoration: none;
+}
+
+.image-8 {
+  width: 200px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1277,6 +1315,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .footer-wrapper {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .home-navigation {
     padding-top: 30px;
   }
@@ -1520,8 +1564,7 @@
 @media screen and (max-width: 479px) {
   .footer-wrapper {
     height: 100vh;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 60px 20px 100px;
   }
 
   .background-video {
