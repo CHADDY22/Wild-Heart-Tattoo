@@ -1563,7 +1563,7 @@
 
 @media screen and (max-width: 479px) {
   .footer-wrapper {
-    height: 100vh;
+    height: auto;
     padding: 60px 20px 100px;
   }
 
@@ -2047,6 +2047,10 @@
 
   .text-block-29 {
     font-size: 12px;
+  }
+
+  .image-8 {
+    padding-top: 20px;
   }
 }
 
